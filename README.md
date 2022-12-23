@@ -8,6 +8,6 @@ GoFのデザインパターンを理解していない状態で実際に使う�
 
 ### Creational(オブジェクトの生成に関するデザインパターン)
 - Singleton
-- FactoryMethod
+- Factory Method
 
 ### Structural(プログラムの構造に関するデザインパターン)

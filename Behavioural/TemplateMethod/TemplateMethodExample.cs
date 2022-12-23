@@ -1,8 +1,9 @@
 ﻿
-/* 
- * 【テンプレートメソッドパターン】
+/**
+ * 【Template Methodパターン】
  * スーパークラスで処理の「手順」を定義したテンプレートメソッドを用意して、具体的な処理はサブクラスに行わせる。
  * 処理手順は同じだが具体的な処理が異なる場合に用いられる。
+ * (アルゴリズムを抽象化するパターンともいえるかな？)
  * 
  * 【メリット　⇔　デメリット】
  * サブクラスで抽象メソッドを実装するだけで具体的な処理を定義できるので拡張性が高まる。　⇔　サブクラスの数が増えやすい。
@@ -63,19 +64,5 @@ class DecorationPlusAndAsterisk : TextDecorationBase
 			result += '*';
 		}
 		return result;
-	}
-}
-
-// Decorationクラスを使うクラスの例
-class DecorationClassUser
-{
-	public void Use()
-	{
-		TextDecorationBase plusDeco = new DecorationPlus("abcdefgh123");
-		TextDecorationBase asteriskDeco = new DecorationPlusAndAsterisk("abcdefgh123");
-
-		// 使うときはテンプレートメソッドを呼び出す。
-		Console.WriteLine(plusDeco.Decorate());
-		Console.WriteLine(asteriskDeco.Decorate());
 	}
 }
