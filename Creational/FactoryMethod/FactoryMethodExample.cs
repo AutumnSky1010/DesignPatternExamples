@@ -17,9 +17,9 @@
 * 　　具体例：階層化アーキテクチャを採用し、レイヤ間の依存方向を一方向にそろえたいとき　かつ　下位レイヤで拡張する必要が生まれた場合
 * 
 * 【なぜファクトリを使うのか？】
-* DIだけだと以下の問題があると考える。
+* DIだけでもプロダクトクラスの拡張は行えるが、以下の問題があると考える。
 * ・初期化でたくさんのサブクラスが必要になる場合、コンストラクタで行うにしては煩雑かつ、意図が読めない。
-- ・用途ごとにコンストラクタをオーバーロードしても、各コンストラクタの目的がコードから読み取れない。
+* ・用途ごとにコンストラクタをオーバーロードしても、各コンストラクタの目的がコードから読み取れない。
 * ・プロダクトクラスの初期化方法の変更の影響を強く受ける。
 * 
 * このように、コンストラクタだけで表現できる情報には限りがある。また、生成方法の知識を自身だけに持たせると分かりづらくなってしまう場合がある。
@@ -64,9 +64,6 @@ namespace DesignPatternExamples.Creational.FactoryMethod.Domain
      * そのプランの内容についてはアプリケーションに任せる。
      * （この結果、「プラン」を使うアプリケーションならば、この抽象クラスを再利用出来る可能性が高まる）
      */
-    /// <summary>
-    /// プランの抽象基底クラス
-    /// </summary>
     public abstract record PlanBase
     {
         public PlanBase(string name) => this.Name = name;
@@ -77,7 +74,7 @@ namespace DesignPatternExamples.Creational.FactoryMethod.Domain
 
         public DateTime EffectiveDate { get; init; }
     }
-
+    
     /// <summary>
     /// Planを生成するファクトリのインターフェイス
     /// </summary>
@@ -91,10 +88,7 @@ namespace DesignPatternExamples.Creational.FactoryMethod.Application
 {
     public record BasicPlan : PlanBase
     {
-        public BasicPlan() : base("基本的なプラン")
-        {
-
-        }
+        public BasicPlan() : base("基本的なプラン") { }
 
         public override int MonthlyAmountYen { get; } = 500;
     }
