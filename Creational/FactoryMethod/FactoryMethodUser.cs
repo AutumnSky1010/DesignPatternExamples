@@ -1,12 +1,12 @@
-﻿using DesignPatternExamples.Creational.FactoryMethod.Application;
+﻿using GoFDesignPatternExamples.Creational.FactoryMethod.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternExamples.Creational.FactoryMethod;
-public class FactoryMethodUser
+namespace GoFDesignPatternExamples.Creational.FactoryMethod;
+public class FactoryMethodUser : IUser
 {
     public void Use()
     {

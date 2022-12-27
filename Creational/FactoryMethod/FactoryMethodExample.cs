@@ -1,4 +1,4 @@
-﻿using DesignPatternExamples.Creational.FactoryMethod.Domain;
+﻿using GoFDesignPatternExamples.Creational.FactoryMethod.Domain;
 /**
 * 【Factory Methodパターン】
 * Virtual Constructorパターンとも呼ばれる。
@@ -28,7 +28,7 @@
 * ・生成の処理に名前を付けられるため、コードで表現できる知識を増やすことができる。（コンストラクタで表現できなかった内容も、ファクトリメソッドで表現する。）
 * ・「生成の処理をどこで行うか？」という設計の判断によっても変わる。
 */
-namespace DesignPatternExamples.Creational.FactoryMethod.Domain
+namespace GoFDesignPatternExamples.Creational.FactoryMethod.Domain
 {
     public class GeneralUser
     {
@@ -87,7 +87,7 @@ namespace DesignPatternExamples.Creational.FactoryMethod.Domain
     }
 }
 
-namespace DesignPatternExamples.Creational.FactoryMethod.Application
+namespace GoFDesignPatternExamples.Creational.FactoryMethod.Application
 {
     public record BasicPlan : PlanBase
     {

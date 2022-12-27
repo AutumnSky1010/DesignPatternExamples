@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternExamples.Behavioural.TemplateMethod;
+namespace GoFDesignPatternExamples.Behavioural.TemplateMethod;
 // Decorationクラスを使うクラスの例
-public class TemplateMethodUser
+public class TemplateMethodUser : IUser
 {
     public void Use()
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternExamples.Creational.SingletonPattern;
+namespace GoFDesignPatternExamples.Creational.SingletonPattern;
 // Loggerを使うクラスの例
-class SingletonUser
+class SingletonUser : IUser
 {
     public void Use()
     {

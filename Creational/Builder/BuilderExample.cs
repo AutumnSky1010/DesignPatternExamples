@@ -1,7 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using System.Text;
 
-namespace DesignPatternExamples.Creational.BuilderPattern;
+namespace GoFDesignPatternExamples.Creational.BuilderPattern;
 /**
  * 【Builderパターン】
  * オブジェクトの生成過程を抽象化したパターン。

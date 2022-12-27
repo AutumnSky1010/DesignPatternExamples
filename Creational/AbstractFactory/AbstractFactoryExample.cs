@@ -1,5 +1,5 @@
 ﻿
-using DesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions;
+using GoFDesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions;
 /**
 * 【Abstract Factoryパターン】
 * 関連するインスタンス群をまとめ、生成するクラスを実装する。
@@ -16,8 +16,9 @@ using DesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractio
 * Factory Methodパターンは「メソッド単位」の抽象化だが、Abstract Factoryパターンは「クラス単位」での抽象化となる。
 * ※本リポジトリでのFactory Methodパターンの例ではFactoryクラスとして外に切り出しているので必ずしもそうとは言えない。
 * そのため、Abstract Factoryパターンは実装のコストが大きくなるが、使いまわしはききやすい。
+* 　⇒「抽象の段階」を考える必要がある。
 */
-namespace DesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions
+namespace GoFDesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions
 {
     public abstract class FileFactoryBase
     {
@@ -37,7 +38,7 @@ namespace DesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstra
     }
 }
 
-namespace DesignPatternExamples.Creational.AbstractFactory.Infrastructure
+namespace GoFDesignPatternExamples.Creational.AbstractFactory.Infrastructure
 {
     public enum FileType { Wav, Txt };
     public class FileFactorySelector

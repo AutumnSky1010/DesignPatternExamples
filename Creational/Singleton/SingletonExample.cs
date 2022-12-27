@@ -26,7 +26,7 @@
  * 
  */
 
-namespace DesignPatternExamples.Creational.SingletonPattern;
+namespace GoFDesignPatternExamples.Creational.SingletonPattern;
 interface IShowable
 {
 	void ShowWithTime(string content);

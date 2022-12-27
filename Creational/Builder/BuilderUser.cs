@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternExamples.Creational.BuilderPattern;
-public class BuilderUser
+namespace GoFDesignPatternExamples.Creational.BuilderPattern;
+public class BuilderUser : IUser
 {
     public void Use()
     {

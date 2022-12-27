@@ -1,8 +1,8 @@
-﻿using DesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions;
-using DesignPatternExamples.Creational.AbstractFactory.Infrastructure;
+﻿using GoFDesignPatternExamples.Creational.AbstractFactory.Infrastructure.Abstractions;
+using GoFDesignPatternExamples.Creational.AbstractFactory.Infrastructure;
 
-namespace DesignPatternExamples.Creational.AbstractFactory;
-public class AbstractFactoryUser
+namespace GoFDesignPatternExamples.Creational.AbstractFactory;
+public class AbstractFactoryUser : IUser
 {
     public void Use()
     {

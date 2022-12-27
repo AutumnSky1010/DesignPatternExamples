@@ -10,7 +10,7 @@
  * 全ての工程(アルゴリズム)はスーパークラス、一つ一つの工程はサブクラスで定義されているので、焦点を当てる部分を分離できる（全体の工程と一つ一つの工程の処理を同時に考えないで済む）
  * ⇔　サブクラスを実装する時にそれぞれの工程で何をする必要があるのか(責任)を完全に理解している必要がある。
  */
-namespace DesignPatternExamples.Behavioural.TemplateMethod;
+namespace GoFDesignPatternExamples.Behavioural.TemplateMethod;
 // 所謂、AbstractClass
 abstract class TextDecorationBase
 {
